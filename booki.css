@@ -292,7 +292,7 @@ direction: rtl;
     align-items: center;
     justify-content: space-between;
 }
-aside
+#aside
 {
     border: 0px solid black;
     background-color: #F2F2F2;
@@ -304,6 +304,7 @@ aside
     font-size: 14px;
 }
 
+
 .asidean
 {
     display: flex;
@@ -313,7 +314,7 @@ aside
     box-shadow: 1px 1px 5px lightgrey;
     margin-bottom: 25px;
     position: relative;
-    height: 160px;
+    height: 155px;
 }
 .infoside
 {
@@ -337,7 +338,7 @@ aside
     margin: auto;
     border-radius: 20px 0px 0px 20px;
     width: 150px;
-    height: 160px;
+    height: 155px;
     object-fit: cover;
 
 }
@@ -627,67 +628,44 @@ button span
 
 }
 /********************************/
-#aside  
+#aside
 {
-    width: 375px;
     display: flex;
     flex-direction: column;
-   justify-content: space-between;
-   height: 520px;
-}
-.asidean img
-{
-    height: 140px;
-    width: 110px;
+    justify-content: space-between;
+    width: 375px;
+    padding: 0px;
+    height: 570px;
 }
 .asidean
 {
-    height: 140px;
-    width: 90%;
-    display: flex;
-    border: 5px solid white;
-    border-radius: 25px;
-    padding: 2px 2px 2px 2px;
-    box-shadow: 1px 1px 5px lightgrey;
-    position: relative;
     margin: auto;
-    background-color: white;
-}
-.info h3
-{
-    margin-left: 10px;
-    font-size: 18px;
-}
-.info p
-{
-    margin-left: 10px;
-    font-size: 15px;
-}
-.ratingaside
-{
-    width: 100px;
-}
-.ratingaside a
-{
-    width: 100%;
-    font-size: 22px;
+    width: 90%;
 }
 /********************************/
-#conteneur
+
+#hebergement1
 {
-    width: 80%;
-    margin: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+#conteneurannonce
+{
     display: flex;
     flex-direction: column;
+    width: 375px;
 }
 .annonce
 {
+    padding: 0px;
+    box-shadow: 0px 1px 0px lightgrey;
     height: 170px;
-    width: 100%;
+    width: 90%;
 }
 .texteannonce h3,p 
 {
-    margin: 10px;
+    margin: 5px;
 }
 .annonce img
 {
