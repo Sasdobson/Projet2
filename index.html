@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr-FR" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booki</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="booki.css">
+    <script src="https://kit.fontawesome.com/043adcb9c5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="page">
+    <header>
+        <img src="assets/images/logo/booki.png" alt="logo booki">
+    <nav>
+            <ul>
+                <li><a href="#hebergement">Hébergements</a></li>
+                <li><a href="#activites">Activités</a></li>
+            </ul>
+    </nav>
+    </header>
+<section id="section1">
+   <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+    <p>En plein centre ville ou pleine nature</p>
+    <div id="geoloc">
+        <form method="post" action="#">
+            <div id="iconegeo">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+                <input type="search" class="infoPlaceholder" placeholder="Exemple : Marseille" id="rechercheville">
+            <button id="recherche">
+                <span id="icone1">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>
+                        Rechercher
+                    </span>
+                </span>
+            </button>
+        </form>
+    </div>
+    <div id="filtres">
+        <h4>Filtres</h4>
+        <ul> <!-- unordered list -->
+            <li> <!-- list item -->
+                <a href="#">
+                <div class="cercle">
+                    <div class="icone">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                </div>
+                Economique <!-- filtresb -->
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <div class="cercle">
+                    <div class="icone">
+                        <i class="fas fa-child"></i>
+                    </div>
+                </div>
+                Familial
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                <div class="cercle">
+                    <div class="icone">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                Romantique <!-- filtresb -->
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <div class="cercle">
+                    <div class="icone">
+                        <i class="fa-solid fa-dog"></i>
+                    </div>
+                </div>
+                    Animaux autorisés <!-- filtresb -->
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+</section>
+<section class="hebergement">
+    <div id="hebergement1">
+            <div id="conteneur">
+                <div id="titrehebergement">
+                     <h3>Hébergements à Marseille</h3>
+                </div>
+                <div id="conteneurannonce">
+                    <div id="element_1" class="annonce">
+                        <a href="#">
+                            <img src="assets/images/hebergements/4_small/cannebiere_small.jpg" alt="">
+                        <div class="texteannonce">
+                            <h3>Auberge La cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                        </div>
+                    </a>
+                    <div class="rating"><!--
+                        --><a href="#5" title="Donner 5 étoiles">★</a><!--
+                        --><a href="#4" title="Donner 4 étoiles">★</a><!--
+                        --><a href="#3" title="Donner 3 étoiles">★</a><!--
+                        --><a href="#2" title="Donner 2 étoiles">★</a><!--
+                        --><a href="#1" title="Donner 1 étoile">★</a>
+                    </div>
+                </div>
+
+                <div id="element_2" class="annonce">
+                    <a href="#">
+                        <img src="assets/images/hebergements/4_small/hotel_pt.jpg">
+                            <div class="texteannonce">  
+                                <h3>Hôtel du port</h3>
+                                <p>Nuit à partir de 52€</p>
+                            </div>
+                    </a>
+                    <div class="rating"><!--
+                        --><a href="#5" title="Donner 5 étoiles">★</a><!--
+                        --><a href="#4" title="Donner 4 étoiles">★</a><!--
+                        --><a href="#3" title="Donner 3 étoiles">★</a><!--
+                        --><a href="#2" title="Donner 2 étoiles">★</a><!--
+                        --><a href="#1" title="Donner 1 étoile">★</a>
+                    </div>
+                </div>
+
+                <div id="element_3" class="annonce">
+                    <a href="#">
+                        <img src="assets/images/hebergements/4_small/les_mouettes.jpg">
+                        <div class="texteannonce">
+                            <h3>Hôtel Les mouettes</h3>
+                            <p>Nuit à partir de 76€</p>
+                        </div>
+                    </a>
+                    <div class="rating"><!--
+                        --><a href="#5" title="Donner 5 étoiles">★</a><!--
+                        --><a href="#4" title="Donner 4 étoiles">★</a><!--
+                        --><a href="#3" title="Donner 3 étoiles">★</a><!--
+                        --><a href="#2" title="Donner 2 étoiles">★</a><!--
+                        --><a href="#1" title="Donner 1 étoile">★</a>
+                    </div>
+                </div>
+                <div id="element_3" class="annonce">
+                    <a href="#">
+                        <img src="assets/images/hebergements/4_small/hotel_mer.jpg">
+                        <div class="texteannonce">
+                            <h3>Hôtel de la mer</h3>
+                            <p>Nuit à partir de 46€</p>
+                        </div>
+                    </a>
+                    <div class="rating"><!--
+                        --><a href="#5" title="Donner 5 étoiles">★</a><!--
+                        --><a href="#4" title="Donner 4 étoiles">★</a><!--
+                        --><a href="#3" title="Donner 3 étoiles">★</a><!--
+                        --><a href="#2" title="Donner 2 étoiles">★</a><!--
+                        --><a href="#1" title="Donner 1 étoile">★</a>
+                    </div>
+                </div>
+                <div id="element_3" class="annonce">
+                    <a href="#">
+                        <img src="assets/images/hebergements/4_small/auberge.jpg">
+                        <div class="texteannonce">
+                            <h3>Auberge Le Panier</h3>
+                            <p>Nuit à partir de 23€</p>
+                        </div>
+                    </a>
+                    <div class="rating"><!--
+                        --><a href="#5" title="Donner 5 étoiles">★</a><!--
+                        --><a href="#4" title="Donner 4 étoiles">★</a><!--
+                        --><a href="#3" title="Donner 3 étoiles">★</a><!--
+                        --><a href="#2" title="Donner 2 étoiles">★</a><!--
+                        --><a href="#1" title="Donner 1 étoile">★</a>
+                    </div>
+                </div>
+                <div id="element_3" class="annonce">
+                    <a href="#">
+                        <img src="assets/images/hebergements/4_small/amina.jpg">
+                        <div class="texteannonce">
+                            <h3>Hôtel chez Amina</h3>
+                            <p>Nuit à partir de 96€</p>
+                        </div>
+                    </a>
+                    <div class="rating"><!--
+                        --><a href="#5" title="Donner 5 étoiles">★</a><!--
+                        --><a href="#4" title="Donner 4 étoiles">★</a><!--
+                        --><a href="#3" title="Donner 3 étoiles">★</a><!--
+                        --><a href="#2" title="Donner 2 étoiles">★</a><!--
+                        --><a href="#1" title="Donner 1 étoile">★</a>
+                    </div>
+                </div>
+         </div>
+         <a href="#" id="afc">Afficher plus</a>
+</div>
+    <aside>
+        <div id="titreaside">
+     <h2>Les plus populaires</h2>
+        <div id="logoarrow">
+            <img src="assets/images/Sanstitre.png" height="20px">
+        </div>
+    </div>
+        <div id="aside">
+            <div class="asidean">
+                <a href="#" class="clickme">
+                    <img src="assets/images/hebergements/3_medium/soleilmatin.jpg" alt="">
+            <div class="infoside">
+                    <div class="info">
+                        <h3>Hôtel Le soleil du matin</h3>
+                        <p>Nuit à partir de 128€</p>
+                    </div>
+                </a>
+                <div class="ratingaside"><!--
+                    --><a href="#5" title="Donner 5 étoiles">★</a><!--
+                    --><a href="#4" title="Donner 4 étoiles">★</a><!--
+                    --><a href="#3" title="Donner 3 étoiles">★</a><!--
+                    --><a href="#2" title="Donner 2 étoiles">★</a><!--
+                    --><a href="#1" title="Donner 1 étoile">★</a>
+                </div>
+            </div>
+        </div>
+            <div class="asidean">
+                <a href="#" class="clickme">
+                    <img src="assets/images/hebergements/3_medium/coeureau.jpg" alt="">
+            <div class="infoside">
+                    <div class="info">
+                        <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                        <p>Nuit à partir de 71€</p>
+                    </div>
+                </a>
+                <div class="ratingaside"><!--
+                    --><a href="#5" title="Donner 5 étoiles">★</a><!--
+                    --><a href="#4" title="Donner 4 étoiles">★</a><!--
+                    --><a href="#3" title="Donner 3 étoiles">★</a><!--
+                    --><a href="#2" title="Donner 2 étoiles">★</a><!--
+                    --><a href="#1" title="Donner 1 étoile">★</a>
+                </div>
+            </div>
+        </div>
+            <div class="asidean">
+                <a href="#" class="clickme">
+                    <img src="assets/images/hebergements/3_medium/bleublanc.jpg" alt="">
+            <div class="infoside">
+                    <div class="info">
+                        <h3>Hôtel Tout bleu et Blanc</h3>
+                        <p>Nuit à partir de 68€</p>
+                    </div>
+                </a>
+                <div class="ratingaside"><!--
+                    --><a href="#5" title="Donner 5 étoiles">★</a><!--
+                    --><a href="#4" title="Donner 4 étoiles">★</a><!--
+                    --><a href="#3" title="Donner 3 étoiles">★</a><!--
+                    --><a href="#2" title="Donner 2 étoiles">★</a><!--
+                    --><a href="#1" title="Donner 1 étoile">★</a>
+                </div>
+            </div>
+        </div>
+</aside>
+
+</section>
+
+
+<h3>Activités à Marseille</h3>
+<section id="activites">
+    <div class="block1">
+        <a href="">
+            <img src="assets/images/activites/1_xlarge/vieuxport.jpg" class="large">
+            <h3>Vieux Port</h3>
+        </a>
+    </div>
+    <div class="blockd">
+        <div class="blockd1">
+            <a href="">
+            <img src="assets/images/activites/2_large/fortpomegues.jpg" class="medium">
+            <h3>Fort de pomègues</h3>
+        </a>
+        </div>
+    <div id="frioul">
+        <a href="">
+            <img src="assets/images/activites/2_large/frioul.jpg">
+            <h3>Îles du frioul</h3>
+        </a>
+        </div>
+    </div>
+    <div class="block1">
+        <a href="">
+        <img src="assets/images/activites/2_large/calanque.jpg" class="large">
+        <h3>Parc Nartional des Calanques</h3>
+    </a>
+    </div>
+    <div class="blockd">
+        <div class="blockd1">
+            <a href="">
+            <img src="assets/images/activites/2_large/notredame.jpg" class="medium">
+            <h3>Notre-Dame-de-la-Garde</h3>
+        </a>
+        </div>
+        <div class="blockd1">
+            <a href="">
+            <img src="assets/images/activites/2_large/longchamp.jpg" class="medium">
+            <h3>Parc Longchamp</h3>
+        </a>
+        </div>
+    </div>
+</section>
+
+</div>
+
+    <footer>
+        <div id="apropos" class="footerp">
+            <h3>A propos</h3>
+            <ul>
+                <li><a href="#">Fonctionnement du site</a></li>
+                <li><a href="#">Conditions générales de vente</a></li>
+                <li><a href="#">Données et confidentialité</a></li>
+            </ul>
+        </div>
+        <div id="noshebergements" class="footerp">
+            <h3>Nos hébergements</h3>
+                <ul>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Soumettre votre hôtel</a></li>
+                </ul>
+        </div>
+        <div id="assistance" class="footerp">
+            <h3>Assistance</h3>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+        </div>
+        
+    </footer>
+    
+</body>
+</html>
