@@ -162,6 +162,14 @@ nav li:hover
    transform: translate(-50%, -50%);
     
 }
+#infologement
+{
+    display: flex;
+}
+#iconeinfo
+{
+    color: #0065FC;
+}
 
 /***********Filtres*************/
 
@@ -412,7 +420,7 @@ aside h2
 }
 #activites a:hover
 {
-    background-color: blue;
+    cursor: pointer;
 }
 .large
 {
@@ -675,37 +683,35 @@ button span
 /********************************/
 #activites
 {
+    max-width: 375px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 2100px;
-    margin: auto;
+    justify-content: space-between;
+    height: 1300px;
 }
-.large
+#activites img
 {
-    height: 205px;
-    width: 80%;
-    object-fit: cover;
-    padding:0px 0px 0px 0px ;
-    justify-content: center;
+    width: 100%;
+    height: 125px;
+    align-content: center;
 }
-.medium
-{
-    height: 205px;
-    width: 80%;
-    object-fit: cover;
-    padding:0px 0px 0px 0px ;
-    justify-content: center;
-}
+
 #frioul
 {
-    height: 205px;
+    max-width: 375px;
+}
+#frioul img
+{
+    max-width: 90%;
+    height: 125px;
     text-align: center;
 
 }
 .block1
 {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     height: 200px;
     box-shadow: 0px 1px lightgrey;
@@ -720,14 +726,24 @@ button span
 
 .blockd
 {
-    height: 420px;
+    height: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     text-align: center;
     border-radius: 20px 20px 20px 20px;
     width:100%;
 }
 
+footer
+{
+    display: flex;
+    flex-direction: column;
+    background-color: darkred;
+}
+footer ul 
+{
+    justify-content: start;
+    list-style-type: none;
+}
 
 }
