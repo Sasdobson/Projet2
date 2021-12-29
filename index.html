@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr-FR" xmlns="http://www.w3.org/1999/html">
+<html lang="fr-FR" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,10 +32,10 @@
             <button id="recherche">
                 <span id="icone1">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                    <span>
+                </span>
+                    <span id="texte">
                         Rechercher
                     </span>
-                </span>
             </button>
         </form>
     </div>
@@ -67,14 +67,14 @@
                 <a href="#">
                 <div class="cercle">
                     <div class="icone">
-                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart"></i>
                     </div>
                 </div>
                 Romantique <!-- filtresb -->
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" id="animaux">
                 <div class="cercle">
                     <div class="icone">
                         <i class="fa-solid fa-dog"></i>
@@ -207,7 +207,7 @@
         <div id="titreaside">
      <h2>Les plus populaires</h2>
         <div id="logoarrow">
-            <i class="fa-solid fa-cloud-arrow-down"></i>
+            <i class="fa-solid fa-arrow-trend-up"></i>
         </div>
     </div>
         <div id="aside">
@@ -220,15 +220,15 @@
                         <p>Nuit à partir de 128€</p>
                     </div>
                 </a>
-                <div class="ratingaside"><!--
-                    --><a href="#5" title="Donner 5 étoiles">★</a><!--
-                    --><a href="#4" title="Donner 4 étoiles">★</a><!--
-                    --><a href="#3" title="Donner 3 étoiles">★</a><!--
-                    --><a href="#2" title="Donner 2 étoiles">★</a><!--
-                    --><a href="#1" title="Donner 1 étoile">★</a>
+                    <div class="ratingaside"><!--
+                        --><a href="#5" title="Donner 5 étoiles">★</a><!--
+                        --><a href="#4" title="Donner 4 étoiles">★</a><!--
+                        --><a href="#3" title="Donner 3 étoiles">★</a><!--
+                        --><a href="#2" title="Donner 2 étoiles">★</a><!--
+                        --><a href="#1" title="Donner 1 étoile">★</a>
+                    </div>
                 </div>
             </div>
-        </div>
             <div class="asidean">
                 <a href="#" class="clickme">
                     <img src="assets/images/hebergements/3_medium/coeureau.jpg" alt="">
@@ -246,7 +246,7 @@
                     --><a href="#1" title="Donner 1 étoile">★</a>
                 </div>
             </div>
-        </div>
+            </div>
             <div class="asidean">
                 <a href="#" class="clickme">
                     <img src="assets/images/hebergements/3_medium/bleublanc.jpg" alt="">
@@ -262,8 +262,9 @@
                     --><a href="#3" title="Donner 3 étoiles">★</a><!--
                     --><a href="#2" title="Donner 2 étoiles">★</a><!--
                     --><a href="#1" title="Donner 1 étoile">★</a>
-                </div>
             </div>
+        </div>
+        </div>
         </div>
 </aside>
 
@@ -317,30 +318,28 @@
 </div>
 
     <footer>
-        <div id="apropos" class="footerp">
-            <h3>A propos</h3>
-            <ul>
-                <li><a href="#">Fonctionnement du site</a></li>
-                <li><a href="#">Conditions générales de vente</a></li>
-                <li><a href="#">Données et confidentialité</a></li>
-            </ul>
-        </div>
-        <div id="noshebergements" class="footerp">
-            <h3>Nos hébergements</h3>
+            <div id="apropos" class="footerp">
+                <h3>A propos</h3>
                 <ul>
-                    <li><a href="#">Charte qualité</a></li>
-                    <li><a href="#">Soumettre votre hôtel</a></li>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales de vente</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
                 </ul>
-        </div>
-        <div id="assistance" class="footerp">
-            <h3>Assistance</h3>
-                <ul>
-                    <li><a href="#">Centre d'aide</a></li>
-                    <li><a href="#">Nous contacter</a></li>
-                </ul>
-        </div>
-        
+            </div>
+            <div id="noshebergements" class="footerp">
+                <h3>Nos hébergements</h3>
+                    <ul>
+                        <li><a href="#">Charte qualité</a></li>
+                        <li><a href="#">Soumettre votre hôtel</a></li>
+                    </ul>
+            </div>
+            <div id="assistance" class="footerp">
+                <h3>Assistance</h3>
+                    <ul>
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                    </ul>
+            </div>
     </footer>
-    
 </body>
 </html>
