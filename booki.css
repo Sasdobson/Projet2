@@ -129,6 +129,7 @@ nav li:hover
 }
 #filtres ul
 {
+    font-weight: 600;
     justify-content: space-between;
     list-style-type: none;
     width: 100%;
@@ -153,7 +154,7 @@ nav li:hover
         
     height: 40px; 
     width: 40px; 
-    background-color: lightblue;
+    background-color: #DEEBFF;
     border-radius: 50%;
     text-align: center;
     margin-right: 10%;
@@ -162,7 +163,7 @@ nav li:hover
 
 .icone
 {   
-    color: blue;
+    color:#0065FC;
    position: relative;
    top: 50%;
    left: 50%;
@@ -173,9 +174,18 @@ nav li:hover
 {
     display: flex;
 }
-#iconeinfo
+#infologement p {
+    color: gray;
+    font-weight: normal;
+}
+
+.iconeinfo
 {
     color: #0065FC;
+    border: solid 1px lightgray;
+    padding: 5px 10px 5px 10px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 /***********Filtres*************/
@@ -189,12 +199,16 @@ nav li:hover
 #hebergement1
 {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 1380px;
     justify-content: space-between;
-    height: 700px;
+    /*height: 700px;*/
+
 }
 .hebergement h3
 {
     font-weight: 600;
+    margin-bottom: 0px;
 }
 
 #conteneur
@@ -210,7 +224,8 @@ nav li:hover
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 850px;
+    max-width: 800px;
+
     margin-bottom: 70px;
 
 }
@@ -227,9 +242,9 @@ nav li:hover
     border-radius: 20px 20px 20px 20px ;
     padding: 5px 5px 5px 5px;
     box-shadow: 1px 1px 5px lightgrey;
-    /*min-width: 200px;*/
-    width: 250px;
-    height: 200px;
+    background-color: white;
+    width: 230px;
+    height: 180px;
     margin-top: 30px;
     display: block;
 }
@@ -239,13 +254,15 @@ nav li:hover
     text-align: center;
     border-radius: 20px 20px 0px 0px;
     /*min-width: 200px;*/
-    width: 250px;
-    height: 110px;
+    width: 230px;
+    height: 100px;
     object-fit: cover;
     
 }
-.texteannonce p
+.texteannonce
 {
+    display: flex;
+    flex-direction: column;
     color: black;
     position: relative;
     font-size: 13px;
@@ -253,27 +270,22 @@ nav li:hover
     margin-bottom: 5px;
     margin-left: 10px;
 }
+.texteannonce p 
+{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
 .texteannonce h3
 {
-
+    margin-top: 0px;
     color: black;
-    font-size: 120%;
+    font-size: 145%;
     font-weight: 600;
     margin-bottom: 0px;
-    margin-left: 10px;
 }
 .annonce a
 {
     text-decoration: none;
-}
-.annonce:hover
-{
-    background-color: #DEEBFF;
-    border-radius: 20px 20px 20px 20px ;
-    transition-duration: 0.6s;
-    overflow: hidden;
-    color: white;
-
 }
 
 .annonce button
@@ -289,29 +301,17 @@ nav li:hover
 /********Rating*********/
 .rating
 {
-width: 92px;
-direction: rtl;
-    
+font-size: 13px;
 }
-.rating
+.fullstar
 {
-   color: #aaa;
-   font-size: 20px;
-   transition: color #0065FC;
-   border-radius: 60px;
+    color: #0065FC;
 }
-.rating a:visited
+.emptystar
 {
-    color: lightgrey;
+    color: Grey;
 }
-.rating a:hover,
-.rating a:focus,
-.rating a:hover ~ a,
-.rating a:focus ~ a 
-{
-   color: #0065FC;
-   cursor: pointer;
-}
+
 /********Rating*********/
 #titreaside
 {
@@ -321,12 +321,14 @@ direction: rtl;
 }
 #aside
 {
-    border: 0px solid black;
     background-color: #F2F2F2;
+    border: 0px solid black;
     padding: 20px;
     border-radius: 20px;
     width: 400px;
+    
 }
+
 .asidean h3 {
     font-size: 14px;
 }
@@ -341,7 +343,8 @@ direction: rtl;
     box-shadow: 1px 1px 5px lightgrey;
     margin-bottom: 25px;
     position: relative;
-    height: 155px;
+    height: 135px;
+    background-color: white;
 }
 .infoside
 {
@@ -356,12 +359,20 @@ direction: rtl;
     padding-top: 10px;
     margin: 0px;
 }
+.info a {
+    text-decoration: none;
+    color: black;
+}
+
+.info a:visited {
+    color: black;
+}
+
 .info
 {
-    float: right;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 300px;
     max-width: 180px;
     word-wrap: break-word;
     color: black;
@@ -371,17 +382,13 @@ direction: rtl;
     text-align: center;
     margin: auto;
     border-radius: 20px 0px 0px 20px;
-    width: 150px;
-    height: 155px;
+    width: 130px;
+    height: 135px;
     object-fit: cover;
 
 }
 
-.clickme 
-{
-    width: 300px;
-    display: flex;
-}
+
 
 aside h2
 {
@@ -395,27 +402,6 @@ aside h2
 
 }
 
-.ratingaside
-{
-    direction: rtl;
-    width: 90px;
-}
-.ratingaside a
-{
-   color: #aaa;
-   text-decoration: none;
-   font-size: 20px;
-   transition: color #0065FC;
-}
-.ratingaside a:hover,
-.ratingaside a:focus,
-.ratingaside a:hover ~ a,
-.ratingaside a:focus ~ a 
-{
-   color: #0065FC;
-   cursor: pointer;
-
-}
 
 /**************************************/
 
@@ -426,7 +412,7 @@ aside h2
     justify-content: space-evenly;
     border: 0px solid black;
     width:100%;
-    height: 620px;
+    height: 550px;
     margin-top: 50px;
 }
 
@@ -452,18 +438,16 @@ aside h2
 {
     width: 100%;
     height: 100%;
-    height: 555px;
-    max-width: 350px;
+    height: 500px;
+    max-width: 300px;
     object-fit: cover;
     padding:0px 0px 0px 0px ;
     justify-content: center;
 }
 .medium
 {
-    width: 100%;
     height: 180px;
     max-height: 180px;
-    max-width:320px;
     object-fit: cover;
     border: 0px solid blue;
 
@@ -473,14 +457,14 @@ aside h2
 {
     display: block;
     position: relative;
-    text-align: center;
-    height: 620px;
+    height: 558px;
     box-shadow: 0px 1px lightgrey;
     border-radius: 20px 20px 20px 20px;
 }
 
 .block1 h3
 {
+    margin-left: 20px;
     margin-bottom: 10px;
     border: 0px solid red;
     font-weight: 600;
@@ -488,11 +472,11 @@ aside h2
 
 .blockd
 {
-    height: 620px;
+    height: 558px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: center;
+    /*text-align: center;*/
     border-radius: 20px 20px 20px 20px;
     width: 24%;
 }
@@ -510,8 +494,9 @@ aside h2
 }
 .blockd1 h3
 {
-    margin-top: 35px;
-    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     font-weight: 600;
 }
 #frioul
@@ -530,6 +515,7 @@ aside h2
 }
 #frioul h3
 {
+    margin-left: 20px;
     font-weight: 600;
 }
 
@@ -539,20 +525,19 @@ aside h2
 footer
 {
     width: 100%;
+    max-width: 1440px;
+    margin:auto;
     background-color: #F2F2F2;
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    align-items: center;
     margin-top: 50px;
-    border: 0px solid black;
 }
 footer h3
 {
+    align-items: left;
         margin-bottom: 10px;
 }
 footer ul
 {
+    margin-left: 0;
     padding: 0px;
     list-style-type: none;
 }
@@ -567,8 +552,360 @@ footer a
     text-decoration: none;
     color: black;
 }
-.footerpp
+#footertext
 {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 0;
+}
+/*********************************************************/
+@media screen and (max-width: 768px)
+{
+#page
+{
+    width: 95%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+header
+{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+
+header ul 
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+}
+header li 
+{
+    width: 100%;
+    height: 70px;
+    margin: 0px;
+    font-size: 22px;
+    text-align: center;
+}
+nav a:hover
+{
+    color: #0065FC;
+    text-decoration:none;
+    padding-bottom: 20px;
+}
+nav li:hover
+{
+   border-top: none;
+   border-bottom: solid 3px #0065FC;
+
+}
+header img
+{
+    height: 50px;
+    margin: auto;
+    justify-content: center;
+}
+/********************************/
+
+#recherche
+{
+    background-color: #0065FC;
+    color: whitesmoke;
+    border-radius: 0px 10px 10px 0px;
+    border: 0px;
+    padding: 10px 10px 10px 5px;
+}
+#icone1
+{
+    display:block ;
+}
+
+#recherche #texte
+{
+    display: none;
+}
+#recherche
+{
+    background-color: #0065FC;
+    color: whitesmoke;
+    border-radius: 15px 15px 15px 15px;
+    border: 0px;
+    padding: 15px 15px 15px 15px;
+}
+/********************************/
+.hebergement 
+{
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#section1
+{
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+#section1 h1 
+{
+    margin: auto;
+    width: 90%;
+    font-size: 23px;
+    font-weight: 600;
+}
+#section1 p 
+{
+    margin: auto;
+    width: 90%;
+}
+#geoloc
+{
+    width: 50%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin: auto;
+}
+#filtres
+{
+    margin: auto;
+    flex-wrap: wrap;
+}
+#filtres h4
+{
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+#filtres ul
+{
+    padding: 0;
+    flex-wrap: wrap;
+    font-size: 17px;
+}
+#filtres li 
+{
+    padding: 5px;
+}
+/********************************/
+#aside
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 65%;
+    margin: auto;
+    padding: 0px;
+    height: 820px;
+    border-radius: 0px;
+}
+.asidean
+{
+    height: 195px;
+    margin: auto;
+    width: 90%;
+}
+.asidean img 
+{
+    height: 190px;
+    width: 160px;
+}
+.infoside
+{
+    width: 70%;
+}
+.infoside h3 
+{
+    font-size: 130%;
+    width: 250px;
+    margin-top: 15px;
+}
+.infoside p 
+{
+    margin-top: 25px;
+    font-size: 115%;
+}
+#titreaside
+{
+    margin-left: 10px;
+   width: 320px;
+   justify-content: space-between;
+}
+.rating
+{
+    font-size: 15px;
+}
+/********************************/
+
+#hebergement1
+{
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+#conteneur
+{
+    width: 100%;
+    margin: auto;
+    background-color: white;
+}
+#conteneurannonce
+{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.annonce
+{
+    padding: 0px;
+    box-shadow: 0px 1px 0px lightgrey;
+    height: 240px;
+    width: 90%;
+}
+.texteannonce h3
+{
+    font-size: 160%;
+}
+.texteannonce p 
+{
+    font-size: 130%;
+}
+.annonce img
+{
+    width: 100%;
+    height: 65%;
+}
+#afc 
+{
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+}
+/********************************/
+#activites
+{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1700px;
+    margin: auto;
+}
+
+#frioul
+{
+    max-width: 768px;
+}
+#frioul img
+{
+    max-width: 100%;
+    height: 200px;
+    text-align: center;
+    
+
+}
+#frioul h3
+{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.block1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 240px;
+    box-shadow: 0px 1px lightgrey;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.block1 h3
+{
+    margin-bottom: 5px;
+    border: 0px solid red;
+    margin-top: 5px;
+    text-align: left;
+    margin-left: 20px;
+}
+.block1 img 
+{
+    height: 200px;
+    align-content: center;
+    max-width: 100%;
+}
+
+.blockd
+{
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    width: 100%;
+    max-width: 768px;
+}
+.blockd1
+{
+   
+    height: 250px;
+    box-shadow: 0px 1px lightgrey;
+    border-radius: 20px 20px 20px 20px;
+    max-width: 768px;
+}
+.blockd1 h3
+{
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.blockd1 img
+{
+    
+    
+    height: 200px;
+    align-content: center;
+}
+
+
+footer
+{
+    margin-top: 70px;
+    display: block;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    text-align: inherit;
+    height: 350px;
+}
+footer h3
+{
+    width: 50%;
+}
+footer ul 
+{
+    width: 60%;
+    list-style-type: none;
+}
+footer li 
+{
+    justify-content: left;
+}
+#footertext
+{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 50px;
+}
 
 }
 /*****************************************************/
@@ -576,7 +913,7 @@ footer a
 {
 #page
 {
-    width: 375px;
+    width: 100%;
     margin-left:auto;
     margin-right:auto;
 }
@@ -663,14 +1000,20 @@ header img
 
 #section1
 {
-    width: 375px;
+    width: 368px;
     margin: auto;
     justify-content: center;
     margin-bottom: 60px;
 }
+#section1 h1 
+{
+    width: 90%;
+    font-size: 23px;
+    font-weight: 600;
+}
 #filtres
 {
-    width: 100%;
+    width: 99%;
     margin: 0;
     flex-wrap: wrap;
 }
@@ -691,17 +1034,15 @@ header img
 /********************************/
 #aside
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 375px;
-    padding: 0px;
-    height: 540px;
+    width: 90%;
+    max-width: 375px;
+    height: 640px;
+    margin: 0;
 }
 .asidean
 {
-    margin: auto;
-    width: 90%;
+max-width: 95%;
+margin: auto;
 }
 #titreaside
 {
@@ -717,11 +1058,15 @@ header img
     display: flex;
     flex-direction: column-reverse;
 }
+#conteneur
+{
+    width: 99%;
+}
 #conteneurannonce
 {
+    width: 99%;
     display: flex;
     flex-direction: column;
-    width: 375px;
 }
 .annonce
 {
@@ -732,12 +1077,16 @@ header img
 }
 .texteannonce h3,p 
 {
-    margin: 5px;
+    margin: 2px;
 }
 .annonce img
 {
     width: 100%;
     height: 55%;
+}
+#afc 
+{
+    margin-left: 0;
 }
 /********************************/
 #activites
@@ -751,14 +1100,15 @@ header img
 
 #frioul
 {
-    max-width: 375px;
+    width: 95%;
+    margin: auto;
+    max-height: 170px;
 }
 #frioul img
 {
     max-width: 100%;
     height: 125px;
     text-align: center;
-    max-width: 350px;
 
 }
 #frioul h3
@@ -772,7 +1122,8 @@ header img
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: center;
+    width: 95%;
+    margin: auto;
     height: 170px;
     box-shadow: 0px 1px lightgrey;
     border-radius: 20px 20px 20px 20px;
@@ -788,9 +1139,9 @@ header img
 }
 .block1 img 
 {
-    width: 100%;
     height: 125px;
     align-content: center;
+    max-width: 100%;
 }
 
 .blockd
@@ -804,7 +1155,8 @@ header img
 }
 .blockd1
 {
-
+    width: 95%;
+    margin: auto;
     height: 170px;
     box-shadow: 0px 1px lightgrey;
     border-radius: 20px 20px 20px 20px;
@@ -817,7 +1169,6 @@ header img
 }
 .blockd1 img
 {
-    max-width: 350px;
     width: 100%;
     height: 125px;
     align-content: center;
@@ -835,7 +1186,7 @@ footer
 }
 footer h3
 {
-    width: 50%;
+    width: 100%;
 }
 footer ul 
 {
@@ -846,5 +1197,12 @@ footer li
 {
     justify-content: left;
 }
-
+#footertext
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
 }
+}
+/*******************************************************/
+
