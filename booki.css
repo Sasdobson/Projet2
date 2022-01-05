@@ -718,6 +718,7 @@ header img
 }
 .infoside
 {
+    /*justify-content: inherit;*/
     width: 70%;
 }
 .infoside h3 
@@ -1041,14 +1042,36 @@ header img
 }
 .asidean
 {
-max-width: 95%;
-margin: auto;
+    height: 140px;
+    width: 90%;
+    margin: auto;
+}
+
+.asidean img 
+{
+    height: 140px;
+    width: 110px;
+}
+.infoside h3 
+{
+    font-size: 105%;
+    width: 150px;
+    margin-top: 5px;
+}
+.infoside p 
+{
+    margin-top: 15px;
+    font-size: 110%;
 }
 #titreaside
 {
     margin-left: 10px;
    width: 350px;
    justify-content: space-between;
+}
+.rating
+{
+    font-size: 13px;
 }
 /********************************/
 
@@ -1072,12 +1095,16 @@ margin: auto;
 {
     padding: 0px;
     box-shadow: 0px 1px 0px lightgrey;
-    height: 170px;
+    height: 175px;
     width: 90%;
 }
-.texteannonce h3,p 
+.texteannonce h3
 {
-    margin: 2px;
+    font-size: 140%;
+}
+.texteannonce p 
+{
+    font-size: 120%;
 }
 .annonce img
 {
